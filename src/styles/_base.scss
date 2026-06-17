@@ -1,0 +1,40 @@
+html, body {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-crimson);
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background);
+  background-image: radial-gradient(1200px 600px at 80% -10%, #df202e1a, #0000 60%), radial-gradient(900px 500px at -10% 30%, #cfd1d40a, #0000 60%);
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}

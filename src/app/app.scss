@@ -1,0 +1,21 @@
+:host {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  .app__background-grid {
+    background-image: linear-gradient(90deg, #ffffff0a 1px, #0000 1px), linear-gradient(#ffffff0a 1px, #0000 1px);
+    background-size: 56px 56px;
+    opacity: .4;
+    inset: calc(var(--spacing) * 0);
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .app__content {
+    z-index: 10;
+    overflow: auto;
+  }
+}

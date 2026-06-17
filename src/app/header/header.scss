@@ -1,0 +1,51 @@
+:host {
+  padding: calc(var(--space-1) * 4) calc(var(--space-1) * 6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-background);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+
+  @supports (color:color-mix(in lab,red,red)) {
+    background-color: color-mix(in oklab, var(--color-background) 70%, transparent);
+  }
+
+  .header__name {
+    color: #0000;
+    background: linear-gradient(#f0f2f5, #858689);
+    background-clip: text;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .header__hire-me {
+    letter-spacing: 0.05em;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-areas:
+      "brand actions"
+      "links links";
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__brand {
+      grid-area: brand;
+    }
+
+    .navbar__links {
+      list-style: none;
+      grid-area: links;
+
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      padding: 0;
+    }
+
+    .navbar__actions {
+      grid-area: actions;
+    }
+  }
+}
