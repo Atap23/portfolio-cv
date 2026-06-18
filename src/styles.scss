@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @use "./styles/_tokens.scss";
 @use "./styles/_base.scss";
+@use "./styles/_utility.scss";
 @use "./styles/_anchor.scss";
 
 @import 'remixicon/fonts/remixicon.css';

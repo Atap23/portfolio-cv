@@ -1,0 +1,106 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space-1) * 10);
+  padding-top: calc(var(--space-1) * 20);
+  padding-bottom: calc(var(--space-1) * 28);
+  padding-inline: calc(var(--space-1) * 6);
+  max-width: 80rem;
+
+  .hero__role-and-location {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space-1) * 3);
+    margin-bottom: calc(var(--space-1) * 8);
+
+    .hero__crimson-line {
+      height: 1px;
+      width: calc(var(--space-1) * 10);
+      background-color: var(--color-crimson);
+    }
+
+    .hero__role-and-location-text {
+      font-family: var(--font-mono);
+      font-size: var(--font-size-xs);
+      letter-spacing: var(--letter-spacing-widest2);
+      color: var(--color-silver-dim);
+    }
+  }
+
+  .hero__name-and-subtitle {
+    margin-bottom: calc(var(--space-1) * 8);
+    letter-spacing: calc(-1 * var(--letter-spacing-sm));
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: .95;
+
+    .hero__name {
+      display: block;
+    }
+
+    .hero__surnames {
+      display: block;
+
+      .hero__surname2 {
+        color: var(--color-crimson);
+      }
+    }
+
+    .hero__subtitle {
+      display: block;
+
+      margin-top: calc(var(--space-1) * 4);
+
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-regular);
+      line-height: 1.2;
+    }
+  }
+
+  .hero__description {
+    margin-top: 0;
+    margin-bottom: calc(var(--space-1) * 8);
+
+    font-size: var(--font-size-lg);
+    line-height: 1.625;
+    color: var(--color-silver-dim);
+
+  }
+
+  .hero__cta-container {
+    display: flex;
+    gap: calc(var(--space-1) * 4);
+    margin-bottom: calc(var(--space-1) * 8);
+  }
+
+  .hero__numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(var(--space-1) * 6);
+    padding-top: calc(var(--space-1) * 10);
+    max-width: 28rem;
+
+    .hero__number-item {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      padding-left: calc(var(--space-1) * 4);
+      border-left: 1px solid var(--color-crimson);
+
+      .hero__number {
+        font-size: var(--font-size-3xl);
+        font-weight: var(--font-weight-semibold);
+        line-height: 1.2;
+      }
+
+      .hero__number-label {
+        margin-top: var(--space-1);
+        font-family: var(--font-mono);
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--letter-spacing-wider2);
+        color: var(--color-silver-dim);
+      }
+    }
+  }
+}

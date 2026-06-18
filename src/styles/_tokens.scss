@@ -78,6 +78,7 @@
   --font-body:    var(--font-display);
 
   // Type scale (rem) — modular ~1.25
+  --font-size-3xs: 0.625rem;  // 10px
   --font-size-2xs: 0.6875rem;  // 11px
   --font-size-xs:  0.75rem;    // 12px
   --font-size-sm:  0.875rem;   // 14px
@@ -110,9 +111,12 @@
   --letter-spacing-tighter: -0.04em;
   --letter-spacing-tight:   -0.02em;
   --letter-spacing-normal:  0;
+  --letter-spacing-sm:    0.025em;
   --letter-spacing-wide:    0.04em;
   --letter-spacing-wider:   0.08em;
+  --letter-spacing-wider2:   0.1em;
   --letter-spacing-widest:  0.16em;
+  --letter-spacing-widest2:  0.25em;
 
 
   // -----------------------------------------------------------------------------
@@ -136,6 +140,7 @@
   --space-24:  6rem;      // 96px
   --space-32:  8rem;      // 128px
   --space-40:  10rem;     // 160px
+  --space: 80rem;
 
 
   // -----------------------------------------------------------------------------
