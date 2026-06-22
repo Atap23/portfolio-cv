@@ -1,0 +1,10 @@
+<app-section
+  [title]="'02 · STACK'"
+  [subtitle]="'Herramientas a las que recurro.'">
+
+  <div class="grid">
+    @for (tool of tools; track tool.name) {
+      <app-tool [item]="tool"></app-tool>
+    }
+  </div>
+</app-section>

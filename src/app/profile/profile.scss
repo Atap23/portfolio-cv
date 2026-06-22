@@ -1,0 +1,48 @@
+:host {
+  display: contents;
+
+  .profile__paragraph {
+    margin: 0 0 var(--space-6) 0;
+    color: var(--color-silver-dim);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+
+    &--main {
+      color: var(--color-silver);
+    }
+  }
+
+  .profile__role {
+    color: var(--color-crimson);
+  }
+
+  .profile__hairline {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-6);
+
+    .profile__hairline-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: var(--space-3);
+        margin-bottom: var(--space-4);
+      }
+
+      .profile__hairline-row-label {
+        font-family: var(--font-mono);
+        font-size: var(--font-size-xs);
+        letter-spacing: var(--letter-spacing-wider2);
+        color: var(--color-silver-dim);
+      }
+
+      .profile__hairline-row-value {
+        font-size: var(--font-size-sm);
+        color: var(--color-silver);
+      }
+    }
+  }
+}

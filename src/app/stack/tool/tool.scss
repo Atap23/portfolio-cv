@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: var(--space-6);
+  background-color: var(--color-background);
+
+  &:hover {
+    background-color: var(--color-surface);
+
+    .tool__border-top {
+      width: 100%;
+    }
+  }
+
+  .tool__border-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-crimson);
+    transition-duration: var(--duration-slow);
+  }
+
+  .tool__level {
+    margin-bottom: var(--space-3);
+    font-family: var(--font-mono);
+    color: var(--color-silver-dim);
+    font-size: var(--font-size-3xs);
+    letter-spacing: var(--letter-spacing-wider2);
+  }
+
+  .tool__name {
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-silver);
+  }
+
+  .tool__description {
+    font-size: var(--font-size-sm);
+    color: var(--color-silver-dim);
+  }
+}

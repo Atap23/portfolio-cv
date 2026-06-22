@@ -3,3 +3,27 @@
   background: linear-gradient(#f0f2f5, #858689);
   background-clip: text;
 }
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: var(--ease-in-out);
+  transition-duration: var(--duration-fast);
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke;
+  transition-timing-function: var(--ease-in-out);
+  transition-duration: var(--duration-fast);
+}
+
+.transition-transform {
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: var(--ease-in-out);
+  transition-duration: var(--duration-fast);
+}
+
+.grid {
+  display: grid;
+  gap: 1px;
+  background-color: var(--color-border);
+}

@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
+import { Profile } from './profile/profile';
+import { Stack } from './stack/stack';
 
 @Component({
   selector: 'app-root',
   imports: [
     Header,
-    Hero
+    Hero,
+    Profile,
+    Stack
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
