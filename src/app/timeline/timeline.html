@@ -1,0 +1,10 @@
+<app-section
+  [title]="'03 · TRAYECTORIA'"
+  [subtitle]="'Dónde he construido'">
+
+  <div class="timeline__items-container">
+    @for (timelineRangeItem of timelineRangeItems; track $index) {
+      <app-timeline-range [timelineRangeItem]="timelineRangeItem" />
+    }
+  </div>
+</app-section>

@@ -1,0 +1,9 @@
+:host {
+  display: contents;
+
+  .timeline__items-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-2);
+  }
+}

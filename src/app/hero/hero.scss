@@ -71,6 +71,10 @@
     display: flex;
     gap: calc(var(--space-1) * 4);
     margin-bottom: calc(var(--space-1) * 8);
+
+    .hero__see-projects {
+      font-weight: var(--font-weight-medium);
+    }
   }
 
   .hero__numbers-container {

@@ -16,13 +16,11 @@
     }
   }
 
-
   &.anchor--primary {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
     box-shadow: 0 0 0 1px #df202e66, 0 10px 40px -10px #df202e80;
 
-    font-weight: var(--font-weight-medium);
     letter-spacing: var(--letter-spacing-sm);
     color: var(--color-primary-foreground);
   }

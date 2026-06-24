@@ -3,6 +3,9 @@ import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { Profile } from './profile/profile';
 import { Stack } from './stack/stack';
+import { Timeline } from './timeline/timeline';
+import { Projects } from './projects/projects';
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +13,10 @@ import { Stack } from './stack/stack';
     Header,
     Hero,
     Profile,
-    Stack
+    Stack,
+    Timeline,
+    Projects,
+    Contact
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

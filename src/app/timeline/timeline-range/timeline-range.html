@@ -1,0 +1,17 @@
+@let vmTimelineRangeItem = timelineRangeItem();
+
+<div class="timeline-range__marker"></div>
+<div class="timeline-range__left-border"></div>
+<div class="timeline-range__title">
+  <h3 class="timeline-range__role">{{ vmTimelineRangeItem.role }}</h3>
+  <span class="timeline-range__period">{{ vmTimelineRangeItem.period }}</span>
+</div>
+<span class="timeline-range__company-and-location">@ {{ vmTimelineRangeItem.company }} · {{ vmTimelineRangeItem.location }}</span>
+<ul class="timeline-range__details">
+  @for (detail of vmTimelineRangeItem.details; track detail) {
+    <li class="timeline-range__detail">
+      <div class="timeline-range__detail-marker"></div>
+      <span class="timeline-range__detail-value">{{ detail }}</span>
+    </li>
+  }
+</ul>

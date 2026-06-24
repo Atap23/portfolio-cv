@@ -1,0 +1,10 @@
+<app-section
+  [title]="'04 · SELECCIÓN'"
+  [subtitle]="'Cosas que he construido.'">
+
+  <div class="grid">
+    @for (project of projectItems; track project.name) {
+      <app-project [project]="project" />
+    }
+  </div>
+</app-section>
