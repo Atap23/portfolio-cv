@@ -6,6 +6,8 @@ import { Stack } from './stack/stack';
 import { Timeline } from './timeline/timeline';
 import { Projects } from './projects/projects';
 import { Contact } from './contact/contact';
+import { Footer } from './footer/footer';
+import { Skills } from './skills/skills';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +18,9 @@ import { Contact } from './contact/contact';
     Stack,
     Timeline,
     Projects,
-    Contact
+    Contact,
+    Footer,
+    Skills
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

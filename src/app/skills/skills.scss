@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  position: relative;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+
+  @supports (color:color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab,var(--color-surface) 60%,transparent);
+  }
+
+  .skills__carousel {
+    display: flex;
+    padding: var(--space-5) 0;
+    animation: 40s linear infinite ticker;
+    white-space: nowrap;
+
+    .skills__skill {
+      margin: 0 var(--space-8);
+      font-family: var(--font-mono);
+      font-size: var(--font-size-sm);
+      letter-spacing: var(--letter-spacing-widest3);
+      color: var(--color-silver-dim);
+      text-transform: uppercase;
+
+      .skills__skill-icon {
+        margin-right: var(--space-3);
+        color: var(--color-crimson);
+      }
+    }
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
