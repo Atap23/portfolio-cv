@@ -17,5 +17,6 @@
   .app__content {
     z-index: 10;
     overflow: auto;
+    scroll-behavior: smooth;
   }
 }

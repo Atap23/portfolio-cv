@@ -3,9 +3,7 @@ import { Section } from '../../shared/section/section';
 
 @Component({
   selector: 'app-contact',
-  imports: [
-    Section
-  ],
+  imports: [],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })

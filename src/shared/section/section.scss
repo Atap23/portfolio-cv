@@ -1,7 +1,10 @@
+@use 'breakpoints';
+
 :host {
   display: block;
   max-width: 80rem;
-  padding: calc(var(--space-1) * 24) calc(var(--space-1) * 6);
+  margin-inline: auto;
+  padding: var(--space-24) var(--space-6);
 
   .section__header {
     display: flex;
@@ -27,5 +30,13 @@
     }
   }
 
+  @include breakpoints.md {
+    padding: var(--space-32) var(--space-6);
 
+    .section__header {
+      .section__subtitle {
+        font-size: var(--font-size-5xl);
+      }
+    }
+  }
 }

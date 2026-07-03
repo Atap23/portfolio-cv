@@ -1,3 +1,5 @@
+@use 'breakpoints';
+
 :host {
   display: block;
   max-width: 80rem;
@@ -40,6 +42,18 @@
       gap: var(--space-4);
       flex-wrap: wrap;
       align-items: center;
+    }
+  }
+
+  @include breakpoints.md {
+    padding: var(--space-40) var(--space-6);
+
+    .contact__card {
+      padding: var(--space-16);
+
+      .contact__title {
+        font-size: var(--font-size-6xl);
+      }
     }
   }
 }

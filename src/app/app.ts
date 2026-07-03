@@ -28,10 +28,19 @@ import { Skills } from './skills/skills';
 export class App {
   protected readonly title = signal('portfolio-cv');
 
-  codePreview = signal(`export const architecture = {
-    framework: 'Angular',
-    language: 'TypeScript',
-    patterns: ['Signals', 'RxJS', 'Modular Design'],
-    focus: ['Scale', 'DX', 'Performance']
-  };`);
+  constructor() {
+    window.addEventListener('DOMContentLoaded', () => {
+      // Comprueba si la URL actual tiene un ancla (ej: #contact)
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          // Espera un milisegundo a que el navegador procese el sitio e introduce el salto directo
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'auto' }); // 'auto' es el salto instantáneo
+          }, 10);
+        }
+      }
+    });
+
+  }
 }

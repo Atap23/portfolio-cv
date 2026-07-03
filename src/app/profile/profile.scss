@@ -1,3 +1,5 @@
+@use 'breakpoints';
+
 :host {
   display: contents;
 
@@ -17,6 +19,7 @@
   }
 
   .profile__hairline {
+    height: fit-content;
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     padding: var(--space-6);
@@ -42,6 +45,37 @@
       .profile__hairline-row-value {
         font-size: var(--font-size-sm);
         color: var(--color-silver);
+      }
+    }
+  }
+
+  @include breakpoints.md {
+    padding-top: var(--space-32);
+    padding-bottom: var(--space-40);
+
+    .profile__content {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: var(--space-10);
+
+      .profile__left {
+        grid-column: span 7 / span 7;
+      }
+
+      .profile__hairline {
+        grid-column: span 5 / span 5;
+      }
+    }
+  }
+
+  @include breakpoints.lg {
+    .hero__left {
+      .hero__name-and-subtitle {
+        font-size: var(--font-size-8xl);
+      }
+
+      .hero__subtitle {
+        font-size: var(--font-size-5xl);
       }
     }
   }
